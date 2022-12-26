@@ -1,0 +1,110 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+.nav-bar {
+  height: 55px;
+  width: 100%;
+  background-color: #F55A5A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.nav-bar p {
+  margin: 0;
+}
+.nav-bar i {
+  color: white;
+  font-size: 24px;
+}
+.nav-bar .page-name {
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+}
+
+.vacation {
+  display: flex;
+  gap: 20px;
+  width: 85%;
+}
+@media (max-width: 700px) {
+  .vacation {
+    flex-direction: column;
+  }
+}
+.vacation p, .vacation i {
+  margin: 0;
+  display: inline-block;
+}
+.vacation .vacation-picture-up {
+  flex: none;
+  border-radius: 5px;
+  width: 125px;
+  height: 168px;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 700px) {
+  .vacation .vacation-picture-up {
+    display: none;
+  }
+}
+.vacation .vacation-picture-down {
+  flex: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 168px;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 700px) {
+  .vacation .vacation-picture-down {
+    display: none;
+  }
+}
+.vacation .vacation-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.vacation .vacation-info .location i {
+  color: #F55A5A;
+  font-size: 10px;
+}
+.vacation .vacation-info .location .country, .vacation .vacation-info .location a {
+  font-size: 11px;
+  letter-spacing: 0.17em;
+}
+.vacation .vacation-info .location a {
+  color: #918E9B;
+}
+.vacation .vacation-info .title {
+  font-weight: bold;
+  font-size: 25px;
+  color: #2B283A;
+  margin: 5px 0 15px 0;
+}
+.vacation .vacation-info .time {
+  font-weight: bold;
+  font-size: 11px;
+  color: #2B283A;
+  -webkit-margin-after: 5px;
+          margin-block-end: 5px;
+}
+.vacation .vacation-info .description {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 150%;
+}/*# sourceMappingURL=style.css.map */
